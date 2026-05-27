@@ -1,0 +1,68 @@
+original_file,sorted_folder,recommended_filename,recommended_page_or_section,caption_or_use,priority,notes
+IMG_1795.jpg,01_homepage,home_hero_final_robot_pool_front.jpg,Home hero,Final robot beside the pool after successful wet testing; strongest homepage hero image.,High,
+IMG_1797.jpg,01_homepage,home_robot_pool_side_angle.jpg,Home feature image,Current robot in pool testing environment; use for “Built for underwater autonomy” block.,High,
+IMG_1442.jpg,01_homepage,home_lab_robot_phase1_build.jpg,Home progress teaser,"Earlier assembled prototype showing visible camera, PVC structure, and thruster layout.",Medium,
+robosub_cad.png,01_homepage,home_cad_preview_full_robot.png,Home CAD preview,CAD preview image for design/engineering section card.,High,
+ScreenRecording_04-30-2026_17-52-22_1.mov,07_video_testing_media,video_pool_thruster_test_2026_04_30.mov,Home / Testing video,Short footage from successful thruster value test and waterproof hull run.,High,
+phase0_inthewater.png,02_roadmap_build_journey,roadmap_01_phase0_water_test.png,Roadmap,Phase 0 in-water testing; use as the earliest water-test milestone.,High,
+att.dJXgK1hIksElDFGdojaeWH86gH9iJKGGr9OjS75hILM.jpg,02_roadmap_build_journey,roadmap_02_early_phase_prototype_pvc_camera.jpg,Roadmap,Early PVC/camera prototype with team stickers; good “first working body” milestone.,High,
+IMG_1339.jpg,02_roadmap_build_journey,roadmap_03_electronics_thruster_wiring.jpg,Roadmap / Navionics,Electronics and wiring setup during thruster/ESC integration.,High,
+IMG_1411.jpg,02_roadmap_build_journey,roadmap_04_frame_side_build.jpg,Roadmap / Mechanical,Mechanical frame build stage with side profile visible.,High,
+IMG_1412.jpg,02_roadmap_build_journey,roadmap_05_frame_front_build.jpg,Roadmap / Mechanical,Front view of early frame/body structure.,High,
+IMG_1442.jpg,02_roadmap_build_journey,roadmap_06_phase1_robot_assembled.jpg,Roadmap,Phase 1 assembled robot with camera/thruster layout.,High,
+IMG_1551.jpg,02_roadmap_build_journey,roadmap_07_frame_parts_cutting.jpg,Roadmap / Mechanical,Fabrication stage showing cut frame pieces/components.,High,
+IMG_1721.jpg,02_roadmap_build_journey,roadmap_08_current_parts_lab_assembly.jpg,Roadmap / Mechanical,Lab assembly stage with current parts and thruster mounts.,High,
+robosub_cad.png,02_roadmap_build_journey,roadmap_09_cad_model_done_current_parts.png,Roadmap / CAD,CAD model completed with current parts.,High,
+IMG_2178.jpg,02_roadmap_build_journey,roadmap_10_poolside_pretest_setup.jpg,Roadmap,Poolside preparation before wet testing.,High,
+IMG_1794.jpg,02_roadmap_build_journey,roadmap_11_final_robot_pool_left_angle.jpg,Roadmap,Final/latest robot at pool after testing.,High,
+IMG_1795.jpg,02_roadmap_build_journey,roadmap_12_final_robot_pool_front.jpg,Roadmap,Final/latest robot front view at pool.,High,
+IMG_1797.jpg,02_roadmap_build_journey,roadmap_13_final_robot_pool_side_angle.jpg,Roadmap,Final/latest robot side/rear angle at pool.,High,
+image6.png,03_cad_robot_design,cad_01_robot_render_isometric_dark_bg.png,CAD / Mechanical,CAD isometric robot render.,High,
+image7.png,03_cad_robot_design,cad_02_robot_render_front_dark_bg.png,CAD / Mechanical,CAD front render showing camera/sensor arrangement.,High,
+image8.png,03_cad_robot_design,cad_03_robot_render_angle_dark_bg.png,CAD / Mechanical,CAD angled render showing full assembly.,High,
+IMG_168.png,03_cad_robot_design,cad_04_mobile_cad_view_1.png,CAD / Mechanical,Mobile CAD screenshot; use only if cropped/cleaned.,Medium,
+IMG_1688.png,03_cad_robot_design,cad_05_mobile_cad_view_2.png,CAD / Mechanical,Mobile CAD screenshot; use only if cropped/cleaned.,Medium,
+IMG_1692.png,03_cad_robot_design,cad_06_mobile_cad_view_3.png,CAD / Mechanical,Mobile CAD screenshot; use only if cropped/cleaned.,Medium,
+IMG_1693.png,03_cad_robot_design,cad_07_mobile_cad_front_view.png,CAD / Mechanical,Mobile CAD front view screenshot; use only if cropped/cleaned.,Medium,
+robosub_cad.png,03_cad_robot_design,cad_08_full_current_robot_cad.png,CAD / Mechanical,Best full CAD image for CAD page hero.,High,
+robosub_front.png,03_cad_robot_design,cad_09_front_current_robot_cad.png,CAD / Mechanical,Best front CAD image for CAD page detail block.,High,
+image4.jpg,03_cad_robot_design,cad_10_robot_on_workbench_or_render_reference.jpg,CAD / Mechanical,Robot/design reference with visible current layout.,Medium,
+IMG_1530.jpg,04_mechanical_page,mechanical_01_black_frame_closeup.jpg,Mechanical,Clean close-up of black frame; good mechanical page section hero.,High,
+IMG_1411.jpg,04_mechanical_page,mechanical_02_frame_side_profile.jpg,Mechanical,Early frame side profile.,High,
+IMG_1412.jpg,04_mechanical_page,mechanical_03_frame_front_profile.jpg,Mechanical,Early frame front profile.,High,
+IMG_1551.jpg,04_mechanical_page,mechanical_04_cut_frame_parts.jpg,Mechanical,Fabricated/cut frame pieces.,High,
+IMG_1721.jpg,04_mechanical_page,mechanical_05_lab_assembly_current_parts.jpg,Mechanical,Current assembly work in lab.,High,
+IMG_1442.jpg,04_mechanical_page,mechanical_06_phase1_mechanical_assembly.jpg,Mechanical,Phase 1 assembled robot body.,High,
+IMG_1794.jpg,04_mechanical_page,mechanical_07_final_build_pool_left_angle.jpg,Mechanical,"Final build at pool, left angle.",High,
+IMG_1795.jpg,04_mechanical_page,mechanical_08_final_build_pool_front.jpg,Mechanical,"Final build at pool, front view.",High,
+IMG_1797.jpg,04_mechanical_page,mechanical_09_final_build_pool_side.jpg,Mechanical,"Final build at pool, side view.",High,
+IMG_1339.jpg,05_navionics_software_page,navionics_01_electronics_wiring_layout.jpg,Navionics,Electronics tray/wiring/ESC integration visual.,High,
+IMG_1340.jpg,05_navionics_software_page,navionics_02_electronics_robot_side_by_side.jpg,Navionics,Electronics next to prototype; good integration visual.,High,
+image3.jpg,05_navionics_software_page,navionics_03_thruster_or_cable_closeup.jpg,Navionics / Mechanical,Close-up of waterproofed cable/thruster connection.,Medium,
+image10.jpg,05_navionics_software_page,navionics_04_camera_or_sensor_parts.jpg,Navionics,Small hardware/sensor/camera part close-up.,Medium,
+image9.jpg,05_navionics_software_page,navionics_05_camera_or_sensor_parts_alt.jpg,Navionics,Alternate hardware/sensor close-up; use as secondary only.,Low,
+killdozer_tests.png,05_navionics_software_page,software_01_object_detection_test_screenshot.png,Software,Testing screenshot related to object detection/vision workflow.,Medium,
+phase0_inthewater.png,05_navionics_software_page,software_02_underwater_test_view.png,Software / Testing,Underwater view from in-water testing; useful for perception/testing section.,High,
+image5.jpg,05_navionics_software_page,software_03_underwater_detection_test.jpg,Software / Testing,Underwater pool view with target/robot; useful for software testing section.,High,
+software.txt,05_navionics_software_page,software_04_progress_log_extract.txt,Software,"Text record of ROS2, YOLO, gate_decider, motor command, ESC/PWM, and wet-test software progress.",High,
+IMG_2219.jpg,06_business_sponsors_contact,general_01_lab_team_working_machining.jpg,Business / Contact / Sponsors,People working in lab/machine area; good human-process image.,High,
+IMG_2178.jpg,06_business_sponsors_contact,general_02_poolside_testing_preparation.jpg,Business / Sponsors / Contact,Poolside testing preparation; shows real testing credibility.,High,
+IMG_1795.jpg,06_business_sponsors_contact,general_03_sponsor_ready_robot_pool_front.jpg,Sponsors / Contact,Clean robot image suitable for sponsor/contact page.,High,
+IMG_1442.jpg,06_business_sponsors_contact,general_04_robot_lab_table_photo.jpg,Business / Sponsors,Robot on lab table; usable for general project overview.,Medium,
+att.dJXgK1hIksElDFGdojaeWH86gH9iJKGGr9OjS75hILM.jpg,06_business_sponsors_contact,general_05_early_robot_with_usm_stickers.jpg,Business / Contact,Early robot with USM branding stickers; useful if cropped well.,Medium,
+ScreenRecording_04-30-2026_17-52-22_1_frame_01.jpg,07_video_testing_media,frame_pool_thruster_test_frame_01.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+ScreenRecording_04-30-2026_17-52-22_1_frame_02.jpg,07_video_testing_media,frame_pool_thruster_test_frame_02.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+ScreenRecording_04-30-2026_17-52-22_1_frame_03.jpg,07_video_testing_media,frame_pool_thruster_test_frame_03.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+ScreenRecording_04-30-2026_17-52-22_1_frame_04.jpg,07_video_testing_media,frame_pool_thruster_test_frame_04.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+ScreenRecording_04-30-2026_17-52-22_1_frame_05.jpg,07_video_testing_media,frame_pool_thruster_test_frame_05.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+ScreenRecording_04-30-2026_17-52-22_1_frame_06.jpg,07_video_testing_media,frame_pool_thruster_test_frame_06.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+video1_frame_01.jpg,07_video_testing_media,frame_pool_thruster_test_duplicate_frame_01.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+video1_frame_02.jpg,07_video_testing_media,frame_pool_thruster_test_duplicate_frame_02.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+video1_frame_03.jpg,07_video_testing_media,frame_pool_thruster_test_duplicate_frame_03.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+video1_frame_04.jpg,07_video_testing_media,frame_pool_thruster_test_duplicate_frame_04.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+video1_frame_05.jpg,07_video_testing_media,frame_pool_thruster_test_duplicate_frame_05.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+video1_frame_06.jpg,07_video_testing_media,frame_pool_thruster_test_duplicate_frame_06.jpg,Video thumbnails / testing,Extracted frame from 04/30/2026 pool thruster testing video.,Medium,Use as video thumbnail or testing gallery still; video1 appears visually duplicated with screen recording.
+Discord_chat_2026-01-25T17_52_08.823Z_2026-04-30T22_56_16.049Z.csv,99_reference_logs,discord_chat_log_2026_01_25_to_2026_04_30.csv,Reference only,Discord build log used to reconstruct roadmap milestones.,Reference,
+software.txt,99_reference_logs,software_progress_notes.txt,Reference only,Software progress notes used to write software/navionics page copy.,Reference,
+phase0.heic.jpg,99_reference_logs,optional_phase0_heic_converted_low_quality.jpg,Do not prioritize,Converted HEIC appears blurry/low utility.,Low,Keep only as reference; not recommended for website.
+killdozer.HEIC.jpg,99_reference_logs,optional_killdozer_heic_converted_low_quality.jpg,Do not prioritize,Converted HEIC appears blurry/low utility.,Low,Keep only as reference; not recommended for website.

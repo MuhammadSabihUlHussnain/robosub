@@ -1,0 +1,170 @@
+@everyone RoboSub - Software Progress Update 02/02/26
+
+Today focused on implementation and validation of a separate gate_decider node for basic gate traversal logic.
+
+What’s working:
+
+New gate_decider package runs independently of existing yoloPub
+Uses YOLO COCO model to detect proxy objects (stop_sign and traffic_light) in place of shark signs
+Converts detections into LEFT / RIGHT gate choice using bounding box center
+Includes stability filtering and decision lock to prevent flicker of bot
+Verified real-world detection with printed signs
+
+Current Behavior:
+
+Robot can approach gate, detect assigned target sign, lock a lane choice, and publish /gate_choice
+Detection is reliable at around ~3 ft with letter size signs.
+
+Next Steps:
+
+Integrate /gate_choice with motor control for approach -> align -> commit behavior
+Add simple approach logic (move forward until detection)
+Later: replace proxy signs with trained shark model
+RaYtheoN [MLH],  — 2/5/26, 4:13 PM
+Robotic-Decision-Making-Lab/ardusub_driver: Collection of ROS 2 packages and hardware interfaces that support ROS 2 integration with ArduSub https://share.google/kSXwhddT63VIFPvZ4
+GitHub
+GitHub - Robotic-Decision-Making-Lab/ardusub_driver: Collection of ...
+Collection of ROS 2 packages and hardware interfaces that support ROS 2 integration with ArduSub - Robotic-Decision-Making-Lab/ardusub_driver
+GitHub - Robotic-Decision-Making-Lab/ardusub_driver: Collection of ...
+RaYtheoN [MLH],  — 2/5/26, 5:57 PM
+#include <Servo.h>
+
+byte servoPin = 9;
+Servo servo;
+
+void setup() {
+    servo.attach(servoPin);
+
+    servo.writeMicroseconds(1500); // send "stop" signal to ESC.
+
+    delay(7000); // delay to allow the ESC to recognize the stopped signal
+}
+
+void loop() {
+    int signal = 1700; // Set signal value, which should be between 1100 and 1900
+
+    servo.writeMicroseconds(signal); // Send signal to ESC.
+}
+Will [HAXS],  — 2/9/26, 11:18 AM
+@everyone I will be in the lab from 1:30 to 5:30 today. The work will primarily focus on simple approach logic to gate, and if time allows, integration of /gate_choice with motor control approach
+Will [HAXS],  — 2/9/26, 5:30 PM
+@everyone RoboSub - Software Progress Update 02/09/26
+
+Good progress on software today around control architecture and wet-test behavior planning.
+
+Confirmed that ROS2 commands publish correctly, hardware driver nodes receive reliably, and shutdown handling is clean. We refactored motordriver.py into a two-layer design:
+
+Behavior layer (approach_controller): decides what the robot should do
+Hardware layer (motordriver_hw): responsible only for how the motors / ESCs are driven
+
+The two are connected with /motor_cmd interface which publishes simple strings (FWD, STOP, LEFT, RIGHT, UP, DOWN). This keeps perception and behavior separated from hardware. Also means we can swap motor drivers from L298Ns to ESCs without rewriting behavior logic.
+
+New info from hardware clarified ESC control spec. Software is structured so motordriver_hw can switch from GPIO to ESC PWM with minimal changes. Software needs a basic calibration table from hardware regarding the new thruster set up. 
+
+A full expected wet test behavior flow was designed for software:
+
+Forward motion until detection
+Stable left / right decision
+Timed commit through gate
+Turn around maneuver
+Standby mode with depth hold, so bot does not sink and can be retasked without restarting the system.
+
+Software architecture is in good shape (Lots of data and previous configs pulled from motordriver, thank you Zach). Aligned with ESC hardware, and ready to integrate once ESC migration is finished. 
+
+TL;DR:
+
+Cleaned up motor control architecture, verified ROS command flow, isolated motor issues to hardware (power / wiring), not software. Control stack is ready for ESCs; once installed, map to /motor_cmd to ESC PWM. Wet test behavior defined: move, detect, choose, commit, turn around, standby with depth hold for repeatable passes.
+JM — 2/9/26, 5:40 PM
+Excellent!
+I will get the parts ordered this week. This is excellent progress. Looking forward!
+Will [HAXS],  — 2/11/26, 11:18 AM
+@everyone I will be in the lab from 2:30 to 5 today. It will be a lighter meeting, focused on confirming PWM GPIO pins for left and right ESCs, and preparing to tweak speed values for hardware setup.
+Will [HAXS],  — 2/11/26, 4:57 PM
+@everyone Robosub software progress update 02/11/26
+
+
+Today we transitioned software from L298N-based motor control to ESC-ready PWM control.
+
+We locked in GPIO18 (left) and GPIO13 (right) as the ESC signal pins.
+
+A standalone ESC test script was created for safe neutral → forward → reverse validation before wet testing.
+
+motordriver_hw has been refactored to now use pulse-width based control compatible with ESCs.
+gugnheim [S&S],  — 2/11/26, 7:40 PM
+Good work
+Will [HAXS],  — 2/18/26, 10:01 AM
+Hey software. Later meeting today. Won’t be able to make it to the lab until 5pm
+Will [HAXS],  — 3/3/26, 4:04 PM
+@everyone Software Update 03/03/26
+
+Object Follow Test Working
+
+Confirmed full pipeline for object tracking and follow logic.
+
+YOLO is successfully detecting “sports ball”
+Filter now passes and motor commands generate properly
+Forward and Yaw logic responding to object position
+Distance logic responding to Frame% thresholds
+Failsafe neutral behavior
+
+Next step is to test physically in the pool, fine tune PWM signals for forward, and basic vertical thrust for pool test.
+
+Commands to replicate:
+
+YOLO Publisher:
+python3 -u ~/robosub_ws/src/yolo_pub/yolo_pub/yoloPubNEW.py
+
+Echo Detections:
+ros2 topic echo /detection_info std_msgs/msg/String
+
+MotorDriver:
+python3 -u ~/robosub_ws/src/motor_driver/motordriver/motorDriverNEW.py
+
+When running, you should see
+FAST / SLOW
+TURN LEFT/ RIGHT / FORWARD
+RaYtheoN [MLH],  — 3/5/26, 10:14 PM
+arduino code
+#include <Servo.h>
+
+// Define ESC objects
+Servo escLeft;
+Servo escRight;
+Servo escVertLeft;
+
+ROV_Arduino_test_Code.ino
+2 KB
+RaYtheoN [MLH],  — 3/5/26, 10:23 PM
+new files
+#!/usr/bin/env python3
+
+import time
+import re
+import rclpy
+from rclpy.node import Node
+
+motorDriverNEW5arduino.py
+8 KB
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+import cv2
+from ultralytics import YOLO
+
+yoloPubNEW2.py
+4 KB
+RaYtheoN [MLH],  — 3/6/26, 3:10 PM
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+import cv2
+from ultralytics import YOLO
+
+yoloPubNEW3NCNN.py
+4 KB
+RaYtheoN [MLH],  — 4/18/26, 11:24 AM
+gazebo is running, mavros works, and ardsub is flashed onto the flight controller
+AMontgo87 — 4/18/26, 2:56 PM
+Heck yeah!
+Ishan — 5/15/26, 3:08 PM
+Were we able to set up our vehicle in QgroundControl?

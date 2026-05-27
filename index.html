@@ -3,43 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Southern Miss RoboSub Team</title>
+  <title>Southern Miss RoboSub Team</title>
   <link rel="icon" type="image/png" href="assets/usm-robotics-favicon.png">
   <link rel="apple-touch-icon" href="assets/usm-robotics-favicon.png">
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/style.css?v=site-modern-11">
 </head>
 <body>
   <header class="site-header">
-    <div class="social-strip" aria-label="Social links">
-      <a href="#" aria-label="Twitter">TW</a>
-      <a href="#" aria-label="Instagram">IG</a>
-      <a href="#" aria-label="LinkedIn">IN</a>
-      <a href="#" aria-label="YouTube">YT</a>
-      <a href="#" aria-label="GitHub">GH</a>
-    </div>
     <div class="brand-bar">
       <a class="brand" href="index.html">
-        <span class="brand-mark"><img src="assets/usm-robotics-logo.png" alt="Robotics and Intelligence Machines Club logo"></span>
+        <span class="brand-mark"><img src="assets/usm-robotics-logo.png" alt="Southern Miss Robotics logo"></span>
         <span><span class="brand-kicker">Southern Miss</span><span class="brand-name">RoboSub Team</span></span>
       </a>
       <nav class="main-nav" aria-label="Primary navigation">
         <a class="active" href="index.html">Home</a>
-        <div class="nav-group">
-          <a href="team.html">The Team</a>
-          <div class="dropdown">
-            <a href="team.html">Team Members</a>
-            <a href="mechanical.html">Mechanical Team</a>
-            <a href="navionics.html">Navionics Team</a>
-            <a href="software.html">Software Team</a>
-            <a href="business.html">Business Team</a>
-          </div>
-        </div>
-        <a href="vehicles.html">Vehicles</a>
+        <a href="team.html">Team Members</a>
         <a href="robosub.html">RoboSub</a>
-        <a href="blog.html">Blog</a>
-        <a href="stem-outreach.html">STEM Outreach</a>
         <a href="sponsors.html">Sponsors</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -47,60 +28,82 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Southern Miss engineering</p>
-        <h1>Golden Eagles Dive Deeper.</h1>
-        <p>A student-led RoboSub team at The University of Southern Mississippi building autonomous underwater vehicles for competition, engineering practice, and Hattiesburg and Pine Belt STEM outreach.</p>
+        <p class="eyebrow">Autonomous underwater vehicle project</p>
+        <h1>Designing an Autonomous Underwater Vehicle for RoboSub</h1>
+        <p>We are building an autonomous underwater robot through mechanical design, electronics integration, software development, and pool-based validation.</p>
+        <div class="actions">
+          <a class="button primary" href="#build-roadmap">Explore the Build</a>
+          <a class="button" href="sponsors.html">View Sponsors</a>
+        </div>
       </div>
-      <div class="hero-panel" aria-hidden="true">
-        <div class="pool-grid"></div>
-        <div class="submarine-card"><span class="sub-dot"></span><span class="sub-line"></span><span class="sub-fin"></span></div>
-      </div>
+      <figure class="hero-media">
+        <img src="assets/images/robosub_website_sorted_assets/01_homepage/home_hero_final_robot_pool_front.jpg" alt="Southern Miss RoboSub robot beside the pool after testing">
+        <figcaption class="caption-chip">Our current RoboSub platform staged at the pool for validation testing.</figcaption>
+      </figure>
     </section>
 
-    <section class="content-section intro-section">
+    <section class="split-section" aria-labelledby="mission-heading">
       <div class="section-copy">
         <p class="eyebrow">Mission</p>
-        <h2>Ocean engineering energy, RoboSub focus</h2>
-        <p>Southern Miss gives a Hattiesburg-based RoboSub team a strong campus home for engineering collaboration, student leadership, fabrication, software, and competition preparation.</p>
-        <p>This local site keeps the multi-page structure you asked for, but the language, color system, and visuals are now tailored toward a Southern Miss RoboSub identity.</p>
+        <h2 id="mission-heading">A complete student engineering build</h2>
+        <p>We develop an autonomous underwater vehicle for competition-inspired navigation and perception challenges. Our build brings together mechanical design, navigation hardware, embedded controls, software autonomy, project operations, and repeated water testing.</p>
       </div>
-      <div class="feature-grid" aria-label="Team focus areas">
-        <article class="feature-card image-card image-card-a"><span>Design</span></article>
-        <article class="feature-card image-card image-card-b"><span>Compete</span></article>
-        <article class="feature-card image-card image-card-c"><span>Outreach</span></article>
+      <div class="stat-grid">
+        <article class="stat-card"><strong>Mechanical</strong><p>Frame, hull, thrusters, waterproofing, buoyancy, and serviceable assembly.</p></article>
+        <article class="stat-card"><strong>Navionics</strong><p>Power distribution, ESCs, sensors, wiring, and onboard compute integration.</p></article>
+        <article class="stat-card"><strong>Software</strong><p>Control logic, perception testing, mission behavior, and pool validation workflows.</p></article>
       </div>
     </section>
 
-    <section class="gallery-section">
-      <div class="gallery-intro">
-        <p class="eyebrow">Site map</p>
-        <h2>Explore the Southern Miss build</h2>
-        <p>Move through the team, vehicle, competition, outreach, sponsor, and contact pages.</p>
+    <section class="roadmap-section" id="build-roadmap">
+      <div class="section-head">
+        <p class="eyebrow">Build roadmap</p>
+        <h2>From first water tests to the current robot</h2>
+        <p>We have advanced through proof-of-concept water testing, electronics integration, frame fabrication, CAD refinement, and poolside validation.</p>
       </div>
-      <div class="page-card-grid">
-        <a class="page-card" href="team.html"><span>Team Members</span><strong>Meet the people and subteams.</strong></a>
-        <a class="page-card" href="vehicles.html"><span>Vehicles</span><strong>Browse robot generations.</strong></a>
-        <a class="page-card" href="robosub.html"><span>RoboSub</span><strong>Competition overview.</strong></a>
-        <a class="page-card" href="stem-outreach.html"><span>STEM Outreach</span><strong>Workshops and demos.</strong></a>
-        <a class="page-card" href="sponsors.html"><span>Sponsors</span><strong>Partner recognition.</strong></a>
-        <a class="page-card" href="contact.html"><span>Contact</span><strong>Reach the team leads.</strong></a>
+      <div class="timeline-grid" aria-label="RoboSub build roadmap">
+        <article class="timeline-card"><img loading="lazy" src="assets/images/robosub_website_sorted_assets/02_roadmap_build_journey/roadmap_01_phase0_water_test.png" alt="Phase 0 robot in the water"><div><h3>Phase 0: First Water Tests</h3><p>We used the first platform to establish baseline buoyancy, stability, and in-water motion.</p></div></article>
+        <article class="timeline-card"><img loading="lazy" src="assets/images/robosub_website_sorted_assets/02_roadmap_build_journey/roadmap_02_early_phase_prototype_pvc_camera.jpg" alt="Early PVC prototype with camera setup"><div><h3>Prototype Body and Camera Setup</h3><p>We built an early body so we could test camera placement, mounts, and basic vehicle packaging.</p></div></article>
+        <article class="timeline-card"><img loading="lazy" src="assets/images/robosub_website_sorted_assets/02_roadmap_build_journey/roadmap_03_electronics_thruster_wiring.jpg" alt="Electronics and thruster wiring on a bench"><div><h3>Electronics and ESC Integration</h3><p>We brought the power path, ESCs, thrusters, and control hardware together on the bench.</p></div></article>
+        <article class="timeline-card"><img loading="lazy" src="assets/images/robosub_website_sorted_assets/02_roadmap_build_journey/roadmap_04_frame_side_build.jpg" alt="Side profile of frame fabrication"><div><h3>Frame Fabrication</h3><p>We moved the frame from layout studies into fabricated parts and assembly checks.</p></div></article>
+        <article class="timeline-card"><img loading="lazy" src="assets/images/robosub_website_sorted_assets/02_roadmap_build_journey/roadmap_06_phase1_robot_assembled.jpg" alt="Phase 1 assembled robot"><div><h3>Hull and Thruster Assembly</h3><p>We assembled the vehicle with a hull, camera housing, thrusters, and serviceable frame structure.</p></div></article>
+        <article class="timeline-card"><img loading="lazy" src="assets/images/robosub_website_sorted_assets/02_roadmap_build_journey/roadmap_09_cad_model_done_current_parts.png" alt="Completed CAD model of current robot"><div><h3>CAD Model Finalization</h3><p>We use the CAD model to document the current layout and guide our next mechanical changes.</p></div></article>
+        <article class="timeline-card"><img loading="lazy" src="assets/images/robosub_website_sorted_assets/02_roadmap_build_journey/roadmap_12_final_robot_pool_front.jpg" alt="Current robot poolside front view"><div><h3>Pool Testing and Current Build</h3><p>We test the current robot poolside to evaluate assembly, control response, and readiness for the next build cycle.</p></div></article>
       </div>
+    </section>
+
+    <section class="split-section" aria-labelledby="cad-heading">
+      <figure class="media-card cad-card">
+        <img loading="lazy" src="assets/images/robosub_website_sorted_assets/03_cad_robot_design/cad_08_full_current_robot_cad.png" alt="Full CAD model of the current RoboSub robot">
+      </figure>
+      <div class="section-copy">
+        <p class="eyebrow">CAD and systems design</p>
+        <h2 id="cad-heading">Designed digitally, checked in the lab</h2>
+        <p>Our CAD work defines frame geometry, thruster placement, enclosure layout, and maintenance access before we fabricate parts or revise the vehicle.</p>
+        <div class="actions">
+          <a class="button primary" href="robosub.html">Explore the Robot</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="split-section" aria-labelledby="sponsor-preview">
+      <div class="section-copy">
+        <p class="eyebrow">Support the build</p>
+        <h2 id="sponsor-preview">Sponsor student robotics development</h2>
+        <p>Sponsor support helps us fund materials, electronics, fabrication, pool testing, and competition preparation for a hands-on autonomous systems project.</p>
+        <div class="actions"><a class="button primary" href="sponsors.html">Support the Team</a><a class="button" href="contact.html">Contact Us</a></div>
+      </div>
+      <figure class="media-card">
+        <img loading="lazy" src="assets/images/robosub_website_sorted_assets/06_business_sponsors_contact/general_03_sponsor_ready_robot_pool_front.jpg" alt="Sponsor-ready view of the RoboSub robot at the pool">
+      </figure>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-card">
-      <div>
-        <h2>The Southern Miss RoboSub Team</h2>
-        <address>Hattiesburg Campus<br>118 College Drive<br>Hattiesburg, MS 39406, USA</address>
-        <a href="mailto:robosub@usm.example">robosub@usm.example</a>
-      </div>
-      <div class="footer-socials" aria-label="Footer social links">
-        <a href="#">FB</a><a href="#">TW</a><a href="#">IG</a><a href="#">IN</a><a href="#">YT</a><a href="#">GH</a>
-      </div>
-      <div class="footer-logo" aria-hidden="true"><span></span></div>
+      <div><h2>Southern Miss RoboSub Team</h2><address>Hattiesburg Campus<br>118 College Drive<br>Hattiesburg, MS 39406</address></div>
+      <nav class="footer-links" aria-label="Footer navigation"><a href="team.html">Team</a><a href="robosub.html">RoboSub</a><a href="sponsors.html">Sponsors</a><a href="contact.html">Contact</a></nav>
     </div>
-    <p class="credit">Tailored for a Southern Miss RoboSub concept. Visuals and resources are original placeholders.</p>
   </footer>
 </body>
 </html>
