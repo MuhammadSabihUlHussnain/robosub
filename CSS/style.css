@@ -371,6 +371,10 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.sponsor-card-compact {
+  grid-template-columns: minmax(8rem, 0.22fr) minmax(0, 1fr);
+}
+
 .sponsor-logo-mark {
   display: grid;
   min-height: 10rem;
@@ -383,9 +387,38 @@ h3 {
   background: rgba(2, 15, 25, 0.62);
 }
 
+.sponsor-card-compact .sponsor-logo-mark {
+  min-height: 8rem;
+  font-size: clamp(1.55rem, 4vw, 2.5rem);
+}
+
+.sponsor-logo-image {
+  padding: clamp(1rem, 3vw, 1.4rem);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.sponsor-logo-image img {
+  display: block;
+  width: min(100%, 20rem);
+  max-height: 8rem;
+  object-fit: contain;
+}
+
+.sponsor-logo-seal img {
+  max-height: 7rem;
+}
+
+.sponsor-logo-dark {
+  background: rgba(2, 15, 25, 0.72);
+}
+
 .sponsor-card h3 {
   margin-top: 0.45rem;
   font-size: clamp(1.7rem, 4vw, 3rem);
+}
+
+.sponsor-card-compact h3 {
+  font-size: clamp(1.35rem, 3vw, 2.15rem);
 }
 
 .sponsor-card p {
