@@ -348,6 +348,50 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.sponsor-list-section {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.sponsor-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.sponsor-card {
+  display: grid;
+  grid-template-columns: minmax(11rem, 0.32fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(13, 43, 69, 0.84), rgba(7, 24, 39, 0.74)),
+    radial-gradient(circle at 100% 0%, rgba(255, 199, 44, 0.12), transparent 16rem);
+  box-shadow: var(--shadow);
+}
+
+.sponsor-logo-mark {
+  display: grid;
+  min-height: 10rem;
+  place-items: center;
+  border: 1px solid rgba(255, 199, 44, 0.34);
+  border-radius: calc(var(--radius) - 4px);
+  color: var(--gold);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  background: rgba(2, 15, 25, 0.62);
+}
+
+.sponsor-card h3 {
+  margin-top: 0.45rem;
+  font-size: clamp(1.7rem, 4vw, 3rem);
+}
+
+.sponsor-card p {
+  color: var(--muted);
+}
+
 .feature-card p,
 .stat-card p,
 .tier-card p,
@@ -714,6 +758,7 @@ address {
   .hero,
   .split-section,
   .page-hero,
+  .sponsor-card,
   .video-card {
     grid-template-columns: 1fr;
   }
