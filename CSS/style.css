@@ -460,6 +460,41 @@ h3 {
   border-radius: calc(var(--radius) - 4px);
 }
 
+.video-showcase-section {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.video-tile {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.video-tile video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #020f19;
+}
+
+.video-tile-featured {
+  max-width: 58rem;
+}
+
+.video-tile figcaption {
+  padding: 0.9rem 1rem 1rem;
+  color: var(--muted);
+}
+
+.video-tile figcaption strong {
+  display: block;
+  color: var(--text);
+}
+
 .compact-media-section {
   grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.72fr);
 }
