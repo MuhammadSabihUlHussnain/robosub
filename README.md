@@ -1,6 +1,6 @@
 # robosub
 
-Static HTML and CSS site for the Southern Miss RoboSub Team.
+Static HTML and CSS site for Southern Miss Robotics - AUV.
 
 ## Local Hosting
 
